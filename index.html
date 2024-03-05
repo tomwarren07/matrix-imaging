@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Representation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #ffffff;
+    }
+
+    #matrixDisplay {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    #matrixCanvas {
+      border: 2px solid #000000;
+      border-radius: 10px;
+    }
+
+    #inputContainer {
+      margin-bottom: 20px;
+    }
+
+    #inputContainer input[type="text"] {
+      padding: 5px;
+      font-size: 16px;
+      width: 300px;
+      margin-right: 10px;
+    }
+
+    #inputContainer button {
+        background-color: #ffffff;
+        border-radius: 5px 10px;
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="inputContainer">
+    <i style="opacity: 0.6;">Use array in array format when giving an array  <br>
+    eg : [[0.2,0.3,0.4]]</i>
+    <br><br>
+    <input type="text" id="arrayInput" placeholder="Enter array...">
+    <button onclick="generateFromInput()">Generate Image</button>
+  </div>
+  <div id="matrixDisplay"></div>
+  <canvas id="matrixCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
